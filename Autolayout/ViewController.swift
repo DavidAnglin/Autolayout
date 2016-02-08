@@ -18,10 +18,9 @@ class ViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        
     }
 
-    var secure: Bool = false { didSet {updateUI() } }
+    var secure: Bool = false { didSet { updateUI() } }
     
     private func updateUI() {
         passwordField.secureTextEntry = secure
@@ -32,7 +31,5 @@ class ViewController: UIViewController
     @IBAction func toggleSecurity() {
         secure = !secure
     }
-    
-
 }
 
